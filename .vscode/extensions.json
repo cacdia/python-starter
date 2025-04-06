@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "usernamehw.errorlens",
+        "ms-toolsai.jupyter",
+        "ms-python.python",
+        "charliermarsh.ruff"
+    ]
+}
