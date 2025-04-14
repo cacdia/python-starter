@@ -3,7 +3,7 @@
     "python.analysis.diagnosticMode": "openFilesOnly",
     "python.analysis.typeCheckingMode": "standard",
     "python.analysis.autoImportCompletions": true,
-    "python.analysis.importFormat": "relative",
+    "python.analysis.importFormat": "absolute",
     "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.inlayHints.callArgumentNames": "partial",
     "python.analysis.inlayHints.variableTypes": true,
