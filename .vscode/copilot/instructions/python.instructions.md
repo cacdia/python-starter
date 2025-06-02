@@ -33,5 +33,5 @@ applyTo: '**'
    config em [ruff.toml](./ruff.toml) ou em `[tool.ruff.lint]` & `[tool.ruff.format]` no [pyproject.toml](./pyproject.toml)
 
 7. **Docs**
-   • [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/)
-   • [https://docs.astral.sh/ruff/](https://docs.astral.sh/ruff/)
+   • [uv](https://docs.astral.sh/uv/)
+   • [ruff](https://docs.astral.sh/ruff/)

@@ -12,7 +12,7 @@
 
 Certifique-se de instalar os seguintes programas antes de começar:
 
-- **Python 3.13 ou superior**
+- **Python 3.12.10**
   [Download Python](https://www.python.org/downloads/)
 
 - **Visual Studio Code**
@@ -68,12 +68,17 @@ Ao abrir o projeto pela primeira vez:
 - Clique em **Install All** ou em **Show Recommendations**.
 - Alternativamente, pressione `Ctrl+Shift+X` (ou `Cmd+Shift+X` no macOS) e digite `@recommended` na barra de pesquisa.
 
+As extensões recomendadas para este projeto são:
+- **Error Lens** (usernamehw.errorlens)
+- **Python** (ms-python.python)
+- **Ruff** (charliermarsh.ruff)
+
 #### Selecione o interpretador Python correto
 
 1. Pressione `Ctrl+Shift+P` (ou `Cmd+Shift+P` no macOS).
 2. Digite **Python: Select Interpreter**.
 3. Escolha o interpretador Python referente ao ambiente virtual criado (`.venv`), geralmente exibido como:
-   `"Python 3.13.x ('.venv':venv)"`.
+   `"Python 3.12.10 ('.venv':venv)"`.
 
 ### 4. Execute o projeto
 
@@ -87,10 +92,16 @@ uv run main.py
 python-starter/
 ├── main.py              # Ponto de entrada do programa
 ├── pyproject.toml       # Metadados e dependências do projeto
+├── ruff.toml            # Configurações específicas do Ruff
 ├── .python-version      # Versão recomendada do Python
+├── src/                 # Diretório de código fonte
+│   ├── __init__.py      # Torna o diretório um pacote
+│   ├── aluno.py         # Implementação da classe Aluno
+│   └── sala.py          # Implementação da classe Sala
 └── .vscode/             # Configurações otimizadas para VSCode
     ├── extensions.json  # Extensões recomendadas
-    └── settings.json    # Configurações específicas do projeto
+    ├── settings.json    # Configurações específicas do projeto
+    └── tasks.json       # Tarefas configuradas para o projeto
 ```
 
 ## 💻 Desenvolvimento
@@ -104,7 +115,10 @@ Use os comandos abaixo para facilitar o desenvolvimento do projeto:
 uv run main.py        # recomendado
 
 # Formatar código com Ruff
-ruff format .
+uv run ruff format . --check
+
+# Verificar e corrigir lint com Ruff
+uv run ruff check . --fix
 
 # Adicionar uma nova dependência
 uv add nome-do-pacote
@@ -112,6 +126,14 @@ uv add nome-do-pacote
 # Sincronizar dependências após alterações no pyproject.toml
 uv sync
 ```
+
+Também é possível executar as tarefas configuradas pelo VS Code:
+
+1. Pressione `Ctrl+Shift+P` (ou `Cmd+Shift+P` no macOS).
+2. Digite **Tasks: Run Task**.
+3. Selecione uma das tarefas disponíveis:
+   - **Formatar com Ruff**: Verifica a formatação do código
+   - **Lint com Ruff**: Executa o linter e corrige problemas automaticamente
 
 ## 🪟 Solução de Problemas no Windows
 

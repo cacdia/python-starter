@@ -1,5 +1,6 @@
 {
   // Configurações do Python Language Server
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
   "python.terminal.focusAfterLaunch": true,
   "python.terminal.activateEnvironment": true,
   "python.terminal.activateEnvInCurrentTerminal": true,
@@ -73,10 +74,10 @@
   "github.copilot.chat.followUps": "always",
   "github.copilot.chat.codeGeneration.useInstructionFiles": true,
   "chat.instructionsFilesLocations": {
-    ".github/instructions": true
+    ".vscode/copilot/instructions": true
   },
   "chat.promptFilesLocations": {
-    ".github/prompts": true
+    ".vscode/copilot/prompts": true
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "github.copilot.nextEditSuggestions.fixes": true,
