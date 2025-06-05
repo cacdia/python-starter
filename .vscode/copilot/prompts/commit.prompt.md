@@ -18,4 +18,4 @@ description: 'Versionar o projeto usando Conventional Commits'
 
    * `BREAKING CHANGE: descrição`
    * e/ou `<token>: valor` (e.g. `Refs: #123`, `Reviewed-by: X`) .
-7. Submeta o commit através do comando `git commit -m "<mensagem do commit>"`.
+7. Submeta o commit através do comando `git commit -m '<mensagem do commit>'`.
