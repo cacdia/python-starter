@@ -4,6 +4,7 @@ applyTo: '**'
 
 # Copilot Instructions
 
+- use context7
 - Estamos em 2025
 - Nunca assuma informações
 - Faça tão somente o que é pedido
