@@ -1,11 +1,10 @@
 {
   // Configurações do Python Language Server
-  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
   "python.terminal.focusAfterLaunch": true,
   "python.terminal.activateEnvironment": true,
   "python.terminal.activateEnvInCurrentTerminal": true,
   "python.analysis.languageServerMode": "default",
-  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.diagnosticMode": "workspace",
   "python.analysis.typeCheckingMode": "standard",
   "python.analysis.autoImportCompletions": true,
   "python.analysis.importFormat": "absolute",
@@ -19,10 +18,6 @@
   "ruff.configurationPreference": "filesystemFirst",
   // Configurações do editor para Python
   "[python]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
-    },
     "editor.defaultFormatter": "charliermarsh.ruff",
   },
   // Configurações para Jupyter
@@ -70,8 +65,6 @@
   },
   "github.copilot.chat.reviewSelection.enabled": true,
   "chat.extensionTools.enabled": true,
-  "github.copilot.chat.search.semanticTextResults": true,
-  "github.copilot.chat.followUps": "always",
   "github.copilot.chat.codeGeneration.useInstructionFiles": true,
   "chat.instructionsFilesLocations": {
     ".vscode/copilot/instructions": true

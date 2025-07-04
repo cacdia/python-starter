@@ -3,6 +3,8 @@
         "usernamehw.errorlens",
         "ms-toolsai.jupyter",
         "ms-python.python",
-        "charliermarsh.ruff"
+        "charliermarsh.ruff",
+        "ms-toolsai.datawrangler",
+        "qwtel.sqlite-viewer"
     ]
 }

@@ -4,7 +4,7 @@
         {
             "label": "Formatar com Ruff",
             "type": "shell",
-            "command": "uv run ruff format . --check",
+            "command": "uv run ruff format .",
             "group": "build",
             "presentation": {
                 "reveal": "always"
