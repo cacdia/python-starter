@@ -12,16 +12,13 @@
 
 Certifique-se de instalar os seguintes programas antes de começar:
 
-- **Python 3.12.10**
-  [Download Python](https://www.python.org/downloads/)
-
 - **Visual Studio Code**
   [Download VSCode](https://code.visualstudio.com/)
 
 - **Git**
   [Download Git](https://git-scm.com/downloads)
 
-- **uv (recomendado)**
+- **uv**
 
   Instale utilizando o comando adequado ao seu sistema operacional:
 
@@ -86,6 +83,12 @@ As extensões recomendadas para este projeto são:
 uv run main.py
 ```
 
+Para executar diretamente pelo Python:
+
+```bash
+python main.py "<frase>"
+```
+
 ## 📁 Estrutura do Projeto
 
 ```
@@ -93,11 +96,9 @@ python-starter/
 ├── main.py              # Ponto de entrada do programa
 ├── pyproject.toml       # Metadados e dependências do projeto
 ├── ruff.toml            # Configurações específicas do Ruff
-├── .python-version      # Versão recomendada do Python
 ├── src/                 # Diretório de código fonte
-│   ├── __init__.py      # Torna o diretório um pacote
-│   ├── aluno.py         # Implementação da classe Aluno
-│   └── sala.py          # Implementação da classe Sala
+│   ├── __init__.py      # Torna o diretório um pacote (arquivo vazio)
+│   └── vaca.py          # Função vaca_diz para exibir frase e arte ASCII de vaca
 └── .vscode/             # Configurações otimizadas para VSCode
     ├── extensions.json  # Extensões recomendadas
     ├── settings.json    # Configurações específicas do projeto
