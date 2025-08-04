@@ -24,7 +24,9 @@ applyTo: '**'
 - Execute `uv run ruff check . --fix` para corrigir problemas de lint.
 - Use mensagens de commit seguindo o padrão `conventional commits`.
 - Utilize `Pydantic 2.x` para validação de dados.
-- Evite o uso de `dict` ou `Any` sem validação imediata e mapeamento para `TypedDict` ou `BaseModel` do Pydantic.
-- Utilize a ferramenta `context7` para buscar documentação de pacotes e bibliotecas.
+- Evite o uso de `dict` ou `Any` sem validação imediata e mapeamento para `TypedDict` ou `BaseModel` do `Pydantic 2.x`.
+- Utilize a tool `context7` para buscar documentação de pacotes e bibliotecas.
 - Não pré-otimize.
+- Não utilize gambiarras ou soluções temporárias para contornar problemas.
+- Não implemente mockups ou dados fictícios sem solicitação explícita.
 - O ano atual é 2025.

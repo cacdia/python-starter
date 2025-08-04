@@ -37,7 +37,7 @@ Siga os passos abaixo para configurar rapidamente o projeto:
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/thiag0bezerra/python-starter.git
+git clone https://github.com/cacdia/python-starter.git
 cd python-starter
 ```
 
@@ -75,7 +75,7 @@ As extensões recomendadas para este projeto são:
 1. Pressione `Ctrl+Shift+P` (ou `Cmd+Shift+P` no macOS).
 2. Digite **Python: Select Interpreter**.
 3. Escolha o interpretador Python referente ao ambiente virtual criado (`.venv`), geralmente exibido como:
-   `"Python 3.12.10 ('.venv':venv)"`.
+   `"Python 3.13 ('.venv':venv)"`.
 
 ### 4. Execute o projeto
 
